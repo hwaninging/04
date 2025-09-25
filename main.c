@@ -3,12 +3,13 @@
 
 int main(int argc, char *argv[])
 {
-    int time; //변수 선언  
+    int year; //윤년 계산  
     
-    printf("Input the second :");  
-    scanf("%i", &time);  
+    printf("Input the year :");  
+    scanf("%i", &year);  
     
-    printf("the time is : %i : %i\n", time/60, time%60); //분 : 초  
+    printf("Is the year %i the leap year? %i\n", year, (year%4==0 && year%100!=0)||(year%400==0));
+    //400으로 나누어 떨어지면 윤년, != : 아니라는 뜻 
     
     system("PAUSE");	
     return 0;
