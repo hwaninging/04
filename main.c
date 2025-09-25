@@ -3,16 +3,12 @@
 
 int main(int argc, char *argv[])
 {
-    int x, y;
+    int time; //변수 선언  
     
-    printf("Input two integers :"); 
-    scanf("%i %i", &x, &y);
+    printf("Input the second :");  
+    scanf("%i", &time);  
     
-    printf("+ result is : %i\n", x+y);
-    printf("- result is : %i\n", x-y);
-    printf("* result is : %i\n", x*y);
-    printf("/ result is : %i\n", x/y);
-    printf("%% result is : %i\n", x%y);
+    printf("the time is : %i : %i\n", time/60, time%60); //분 : 초  
     
     system("PAUSE");	
     return 0;
